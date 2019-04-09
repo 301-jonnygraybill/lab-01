@@ -4,20 +4,6 @@ html {
   font-family: Arial;
 }
 
-.boxes {
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-header, footer {
-  width: 100%;
-  padding-top: 50px;
-}
-
-#a, #b, #c, #d, #e, #f, #g, #h, #i {
-  background-color: blue;
-}
-
 @media only screen and (max-width: 767px) {
   html {
     width: 480px;
@@ -57,6 +43,43 @@ header, footer {
     height: 80px;
     line-height: 80px;
   }
+
+  /* Colors */
+  #a {
+    background-color: blue;
+  }
+
+  #b {
+    background-color: green;
+  }
+
+  #c {
+    background-color: orange;
+  }
+
+  #d {
+    background-color: red;
+  }
+
+  #e {
+    background-color: purple;
+  }
+
+  #f {
+    background-color: pink;
+  }
+
+  #g {
+    background-color: yellow;
+  }
+
+  #h {
+    background-color: maroon;
+  }
+
+  #i {
+    background-color: gray;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -92,5 +115,42 @@ header, footer {
     width: 760px;
     height: 150px;
     line-height: 150px;
+  }
+
+  /* Colors */
+  #a {
+    background-color: darkblue;
+  }
+  
+  #b {
+    background-color: darkgreen;
+  }
+  
+  #c {
+    background-color: darkorange;
+  }
+  
+  #d {
+    background-color: darkred;
+  }
+  
+  #e {
+    background-color: darkcyan;
+  }
+  
+  #f {
+    background-color: hotpink;
+  }
+  
+  #g {
+    background-color: lightyellow;
+  }
+  
+  #h {
+    background-color: darkkhaki;
+  }
+  
+  #i {
+    background-color: darkgray;
   }
 }

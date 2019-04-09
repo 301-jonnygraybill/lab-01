@@ -3,6 +3,7 @@ div {
   border: 1px solid black;
 }
 
-* {
-  outline: 1px dashed orange;
+.boxes {
+  margin: 0 auto;
+  box-sizing: border-box;
 }
