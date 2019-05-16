@@ -1,165 +1,58 @@
-html {
-  margin: 0 auto;
-  text-align: center;
-  font-family: Arial;
-  width: 480px;
+/* mobile view */
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-width: 480px;
+  grid-template-areas: "a a"
+  "b b"
+  "c c"
+  "d d"
+  "e f"
+  "g h"
+  "i i";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+}
+.container > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-  #a, #b, #c, #d #i {
-    width: 480px;
-  }
-
-  #e, #f, #g, #h {
-    width: 240px;
-    height: 250px;
-    line-height: 250px;
-  }
-
-  #a {
-    height: 75px;
-    line-height: 75px;
-  }
-
-  #b {
-    height: 150px;
-    line-height: 150px
-  }
-
-  #c, #d {
-    height: 125px;
-    line-height: 125px;
-  }
-
-  #d {
-    width: 480px;
-  }
-
-  #i {
-    width: 480px;
-    height: 80px;
-    line-height: 80px;
-  }
-
-  /* Colors */
-  #a {
-    background-color: blue;
-  }
-
-  #b {
-    background-color: green;
-  }
-
-  #c {
-    background-color: orange;
-  }
-
-  #d {
-    background-color: red;
-  }
-
-  #e {
-    background-color: purple;
-  }
-
-  #f {
-    background-color: pink;
-  }
-
-  #g {
-    background-color: yellow;
-  }
-
-  #h {
-    background-color: maroon;
-  }
-
-  #i {
-    background-color: gray;
-  }
-
-@media only screen and (min-width: 768px) {
-  html {
-    width: 960px;
-  }
-
-  #a {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-
-  #a {
-    width: 960px;
-    height: 100px;
-    line-height: 100px;
-  }
-
-  #b {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 5;
-  }
-
-  #b {
-    width: 200px;
-    height: 600px;
-    line-height: 600px;
-  }
-
-  #c, #d {
-    width: 380px;
-    height: 200px;
-    line-height: 200px;
-  }
-
-  #e, #f, #g, #h {
-    width: 190px;
-    height: 250px;
-    line-height: 250px;
-  }
-
-  #i {
-    width: 760px;
-    height: 150px;
-    line-height: 150px;
-  }
-
-  /* Colors */
-  #a {
-    background-color: darkblue;
-  }
-  
-  #b {
-    background-color: darkgreen;
-  }
-  
-  #c {
-    background-color: darkorange;
-  }
-  
-  #d {
-    background-color: darkred;
-  }
-  
-  #e {
-    background-color: darkcyan;
-  }
-  
-  #f {
-    background-color: hotpink;
-  }
-  
-  #g {
-    background-color: lightyellow;
-  }
-  
-  #h {
-    background-color: darkkhaki;
-  }
-  
-  #i {
-    background-color: darkgray;
-  }
+.a {
+  grid-area: a;
+  background-color: lightblue;
+}
+.b {
+  grid-area: b;
+  background-color: lightcoral;
+}
+.c {
+  grid-area: c;
+  background-color: lightseagreen;
+}
+.d {
+  grid-area: d;
+  background-color: lightgoldenrodyellow;
+}
+.e {
+  grid-area: e;
+  background-color: lightgray;
+}
+.f {
+  grid-area: f;
+  background-color: lightgreen;
+}
+.g {
+  grid-area: g;
+  background-color: lightsalmon;
+}
+.h {
+  grid-area: h;
+  background-color: lightslategrey;
+}
+.i {
+  grid-area: i;
+  background-color: lightsteelblue;
 }
